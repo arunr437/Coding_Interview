@@ -1,0 +1,61 @@
+#employeeList {
+    padding: 5%;
+}
+#employee {
+    border: 1px solid black;
+    width: 250px;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    float: left;
+}
+#image {
+    margin: 0 auto;
+    width: 60%;
+}
+#image img {
+    border-radius: 50%;
+    width: 100%;
+}
+#name {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+#crown {
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+.clear {
+    clear: both;
+}
+#bio {
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#navigation {
+    width: 250px;
+    margin: 0 auto;
+}
+#next {
+    float: right;
+}
+.disable {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#role {
+    margin-top: 30px;
+}
+.role {
+    padding: 2% 5% 2% 2%;
+    margin-left: 5%;
+    font-size: 1em;
+    color: black;
+}
