@@ -1,12 +1,15 @@
 #employeeList {
     padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 #employee {
     border: 1px solid black;
-    width: 250px;
+    width: 30%;
     padding-bottom: 2%;
-    margin-left: 10%;
-    float: left;
+    margin: 0 auto;
 }
 #image {
     margin: 0 auto;
@@ -34,6 +37,7 @@
     margin-top: 10px;
 }
 #navigation {
+    clear: both;
     width: 250px;
     margin: 0 auto;
 }
@@ -58,4 +62,7 @@
     margin-left: 5%;
     font-size: 1em;
     color: black;
+}
+#pageNumber {
+    margin-left: 17.7%;
 }
