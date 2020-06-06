@@ -57,10 +57,11 @@ window.onload = function () {
             var employeeHasPic = obj[i].employeehaspic;
             var employeeIsFeatured = obj[i].employeeisfeatured;
             var roles = obj[i].roles;
-
             var output = "";
             output += "<div id='employee'>";
             output += "<div id='crown'>";
+
+            //If employee is featured the crown icon will be added
             if (employeeIsFeatured == 1) {
                 output += "<img src='crown.png' width='25px' alt='Crown Image'/>"
             }
@@ -68,6 +69,7 @@ window.onload = function () {
             output += "<div class = 'clear'></div >";
             output += "<div id = 'image'>";
 
+            //If employee has a picture, it will be inserted
             if (employeeHasPic == 1) {
                 output += "<img src='http://sandbox.bittsdevelopment.com/code1/employeepics/" + i + ".jpg' alt='Employee Image' />"
             }
@@ -77,6 +79,7 @@ window.onload = function () {
             output += "<div id ='bio'>" + bio + "</div>";
             output += "<div id = 'role'>";
 
+            //Loop to get the list of roles and it's details
             for (var j = 0; j < roles.length; j++) {
                 name = roles[j].rolename;
                 color = roles[j].rolecolor;
@@ -87,47 +90,8 @@ window.onload = function () {
             output += "</div>";
             output += "</div>";
 
+            //Inserting the output to employeeList div tag
             document.getElementById("employeeList").innerHTML += output;
-
-
-
-
-
         }
-
-
-        //        //Getting employee first and last name
-        //        document.getElementById("firstName").innerHTML = firstName;
-        //        document.getElementById("lastName").innerHTML = lastName;
-        //
-        //        //Checking if the current employee has an image and inserting it there's one
-        //        if (employeeHasPic == 1) {
-        //            document.getElementById('image').innerHTML = "<img src='http://sandbox.bittsdevelopment.com/code1/employeepics/" + number + ".jpg' alt='Employee Image' />"
-        //        } else {
-        //            document.getElementById('image').innerHTML = "";
-        //        }
-        //
-        //        //Checking if the current employee has an image and inserting it
-        //        if (employeeIsFeatured == 1) {
-        //            document.getElementById('crown').innerHTML = "<img src='crown.png' width='25px' alt='Crown Image'/>"
-        //        } else {
-        //            document.getElementById('crown').innerHTML = "";
-        //        }
-        //
-        //        //Getting employee bio
-        //        document.getElementById("bio").innerHTML = bio;
-        //
-        //        //Getting employee roles from the file and styling the roles based on values in JSON
-        //        document.getElementById("role").innerHTML = "";
-        //        for (var i = 0; i < roles.length; i++) {
-        //            name = roles[i].rolename;
-        //            color = roles[i].rolecolor;
-        //            id = roles[i].roleid;
-        //            document.getElementById("role").innerHTML += "<span class='role' id='role" + id + "' >" + name + "</span>";
-        //            var all = document.getElementsByClassName('role');
-        //            document.getElementById("role" + id).style.backgroundColor = color;
-        //        }
-
-
     }
 };
